@@ -40,7 +40,7 @@ Use `bundle show [gemname]` to see where a bundled gem is installed.
 * bin/rails: spring inserted
 ```
 
-###Edit gemfile and build
+###Edit the gemfile and build
 Required if you want to follow www.railstutorial.org/book
 ```
 vagrant@rails-server:/vagrant/workspace$ cd hello_app/
