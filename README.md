@@ -2,7 +2,7 @@
 Create a disposable rails development environment. Includes Heroku for deployment testing.
 Used to follow online tutorial: https://www.railstutorial.org/book
 
-###To start VM and install rails type
+###To start VM and install rails
 Requires vagrant from http://vagrantup.com
 ```
 vagrant up
