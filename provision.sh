@@ -26,8 +26,3 @@ ln -sf /usr/share/zoneinfo/Pacific/Auckland /etc/localtime
 # Install Heroku - untested
 wget -O- https://toolbelt.heroku.com/install-ubuntu.sh | sh
 
-#echo "Installing mysql"
-#apt-get install -y mysql-server mysql-client >/dev/null
-
-# insert "LANG=UTF-8" into vagrant's .profile
-# TODO
