@@ -102,3 +102,4 @@ http://192.168.50.4:8080/
 
 You should see
 
+https://github.com/anthshor/ruby_on_rails/blob/master/Pictures/Screen%20Shot%202016-09-18%20at%208.54.22%20AM.png
