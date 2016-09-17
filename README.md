@@ -1,17 +1,19 @@
 # Ruby on Rails 
 Create a disposable rails development environment. Includes Heroku for deployment testing.
+Used to follow online tutorial: https://www.railstutorial.org/book
 
-To start VM
+###To start VM and install rails type
+Requires vagrant from http://vagrantup.com
 ```
 vagrant up
 ```
-To connect and navigate to your working directory
+###To connect and navigate to your working directory
 ```
 vagrant ssh
 cd /vagrant
 ```
 
-###Create your rails framework
+###Create your skeleton rails application
 e.g hello_app
 ```
 
@@ -37,8 +39,8 @@ Use `bundle show [gemname]` to see where a bundled gem is installed.
 * bin/rails: spring inserted
 ```
 
-###Edit gemfile and builf
-Required for online tutorial
+###Edit gemfile and build
+Required if you want to follow www.railstutorial.org/book
 ```
 vagrant@rails-server:/vagrant/workspace$ cd hello_app/
 vagrant@rails-server:/vagrant/workspace/hello_app$ cp Gemfile Gemfile.bkp
@@ -81,8 +83,7 @@ Bundle complete! 15 Gemfile dependencies, 63 gems now installed.
 Use `bundle show [gemname]` to see where a bundled gem is installed.
 ```
 
-### Start the web server 
-So you can access from the host machine
+### Running the rails server on your guest
 ```
 vagrant@rails-server:/vagrant/workspace/hello_app$ rails server -b 192.168.50.4 -p 8080
 => Booting Puma
