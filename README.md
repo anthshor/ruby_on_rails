@@ -1,6 +1,7 @@
 # Ruby on Rails 
-Create a disposable rails development environment to follow the online tutorial: https://www.railstutorial.org/book 
-The build includes Heroku for deployment testing.
+To create a disposable rails development environment to follow the online tutorial: https://www.railstutorial.org/book
+
+(includes Heroku for deployment testing).
 
 ###To start VM and install rails
 Requires vagrant from http://vagrantup.com
