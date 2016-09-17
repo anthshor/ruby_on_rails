@@ -8,13 +8,15 @@ vagrant up
 To connect and navigate to your working directory
 ```
 vagrant ssh
+cd /vagrant
 ```
 
 ###Create your rails framework
+e.g hello_app
 ```
-vagrant@rails-server:/vagrant/workspace$ cd /vagrant
+
 vagrant@rails-server:/vagrant/workspace$ mkdir workspace
-vagrant@rails-server:/vagrant/workspace$cd workspace
+vagrant@rails-server:/vagrant/workspace$ cd workspace
 vagrant@rails-server:/vagrant/workspace$ rails _5.0.0.1_ new hello_app
       create  
       create  README.md
@@ -35,7 +37,8 @@ Use `bundle show [gemname]` to see where a bundled gem is installed.
 * bin/rails: spring inserted
 ```
 
-###Edit gemfile
+###Edit gemfile and builf
+Required for online tutorial
 ```
 vagrant@rails-server:/vagrant/workspace$ cd hello_app/
 vagrant@rails-server:/vagrant/workspace/hello_app$ cp Gemfile Gemfile.bkp
@@ -78,7 +81,8 @@ Bundle complete! 15 Gemfile dependencies, 63 gems now installed.
 Use `bundle show [gemname]` to see where a bundled gem is installed.
 ```
 
-### Start the web server from the guest so you can access from the host machine
+### Start the web server 
+So you can access from the host machine
 ```
 vagrant@rails-server:/vagrant/workspace/hello_app$ rails server -b 192.168.50.4 -p 8080
 => Booting Puma
