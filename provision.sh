@@ -6,7 +6,9 @@ $ cat provision.sh
 
 echo "Downloading and installing Ruby pre-requirements"
 apt-get update -y
-apt-get install -y build-essential zlib1g-dev libssl-dev libreadline6-dev libyaml-dev libsqlite3-dev nodejs npm git
+apt-get install -y build-essential zlib1g-dev libssl-dev libreadline6-dev libyaml-dev libsqlite3-dev nodejs npm git curl
+
+apt-get install imagemagick --fix-missing
 
 echo "Downloading Ruby 2.2"
 wget http://cache.ruby-lang.org/pub/ruby/2.2/ruby-2.2.5.tar.gz
